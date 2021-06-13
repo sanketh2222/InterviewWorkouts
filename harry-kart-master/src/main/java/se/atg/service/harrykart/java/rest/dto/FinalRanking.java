@@ -3,7 +3,6 @@ package se.atg.service.harrykart.java.rest.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonRootName;
 
-@JsonRootName(value = "ranking")
 public class FinalRanking {
 	
 	private int position;
