@@ -47,6 +47,10 @@ public class HarryKartServiceImpl implements HarryKartService {
     		
     	});
     	
+    	//Other way to do for sorting and limiting---timeCalculatedList will be in place of horseRanking which collects the objects
+    	
+    	//final List<FinalRanking> rankingList=timeCalculatedList.stream().sorted((o1, o2) -> Double.compare(o1.getTotaltimetaken(), o2.getTotaltimetaken())).limit(3).collect(Collectors.toList());
+    	
     	final List<FinalRanking> rankingList=horseRanking.values().stream().limit(3).collect(Collectors.toList());
 		
 		  IntStream.range(0, rankingList.size()).forEach(index ->
