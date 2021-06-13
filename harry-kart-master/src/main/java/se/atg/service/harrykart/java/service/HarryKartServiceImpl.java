@@ -49,7 +49,7 @@ public class HarryKartServiceImpl implements HarryKartService {
     	
     	final List<FinalRanking> rankingList=horseRanking.values().stream().limit(3).collect(Collectors.toList());
 		
-		  IntStream.range(0, horseRanking.values().size()).forEach(index ->
+		  IntStream.range(0, rankingList.size()).forEach(index ->
 		  rankingList.get(index).setPosition(index+1));
 		  
 		  return rankingList;
